@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VKZXHT4NCV"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-VKZXHT4NCV');
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — TakeHomeCalc.net</title>
+<meta name="description" content="TakeHomeCalc.net is a free salary and take home pay calculator for UK, US, Canada and Australia.">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root { --bg:#060d0a; --surface:#0a1510; --card:#0f1e16; --border:#1a3324; --emerald:#10b981; --emerald-light:#34d399; --emerald-dim:#064e3b; --gold:#f59e0b; --gold-light:#fbbf24; --text:#ecfdf5; --text-muted:#6b9e87; --text-dim:#2d5544; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { background:var(--bg); color:var(--text); font-family:'Plus Jakarta Sans',sans-serif; font-weight:300; }
+  body::before { content:''; position:fixed; inset:0; background-image:linear-gradient(rgba(16,185,129,0.04) 1px,transparent 1px),linear-gradient(90deg,rgba(16,185,129,0.04) 1px,transparent 1px); background-size:48px 48px; pointer-events:none; z-index:0; }
+  .glow { position:fixed; top:-150px; left:50%; transform:translateX(-50%); width:900px; height:400px; background:radial-gradient(ellipse,rgba(16,185,129,0.1) 0%,transparent 65%); pointer-events:none; z-index:0; }
+  header { position:relative; z-index:10; padding:0 40px; height:68px; display:flex; align-items:center; border-bottom:1px solid var(--border); background:rgba(6,13,10,0.9); backdrop-filter:blur(20px); }
+  .logo { display:flex; align-items:center; gap:10px; text-decoration:none; }
+  .logo-mark { width:34px; height:34px; background:linear-gradient(135deg,var(--emerald),var(--gold)); border-radius:10px; display:flex; align-items:center; justify-content:center; font-size:1.1rem; }
+  .logo-text { font-size:1.15rem; font-weight:800; color:var(--text); }
+  .logo-text span { color:var(--emerald-light); }
+  .content { position:relative; z-index:1; max-width:760px; margin:0 auto; padding:60px 24px 100px; }
+  h1 { font-size:2.4rem; font-weight:800; letter-spacing:-0.03em; margin-bottom:16px; }
+  h1 span { background:linear-gradient(135deg,var(--emerald-light),var(--gold-light)); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; }
+  h2 { font-size:1.1rem; font-weight:700; color:var(--emerald-light); margin:40px 0 14px; }
+  p { color:var(--text-muted); line-height:1.9; font-size:0.95rem; margin-bottom:16px; }
+  strong { color:var(--text); font-weight:600; }
+  .country-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:14px; margin:24px 0; }
+  .country-card { background:var(--card); border:1px solid var(--border); border-radius:12px; padding:20px; }
+  .country-card h4 { font-size:0.92rem; font-weight:700; color:var(--emerald-light); margin-bottom:8px; }
+  .country-card p { font-size:0.83rem; margin:0; }
+  .disclaimer { background:rgba(245,158,11,0.06); border-left:2px solid var(--gold); border-radius:0 10px 10px 0; padding:18px 22px; margin-top:32px; }
+  .disclaimer p { margin:0; font-size:0.88rem; }
+  footer { position:relative; z-index:1; border-top:1px solid var(--border); padding:28px 40px; display:flex; justify-content:space-between; }
+  footer p, footer a { font-size:0.75rem; color:var(--text-dim); text-decoration:none; }
+  footer a:hover { color:var(--emerald-light); }
+  @media(max-width:768px) { header{padding:0 16px} .country-grid{grid-template-columns:1fr} footer{flex-direction:column;gap:10px} }
+</style>
+</head>
+<body>
+<div class="glow"></div>
+<header>
+  <a href="index.html" class="logo">
+    <div class="logo-mark">💷</div>
+    <span class="logo-text">TakeHome<span>Calc</span></span>
+  </a>
+</header>
+<div class="content">
+  <h1>About <span>TakeHomeCalc</span></h1>
+  <p>TakeHomeCalc.net is a free salary and take home pay calculator covering the UK, United States, Canada, and Australia. We built it because understanding your actual net pay — after all taxes and deductions — shouldn't require an accounting degree.</p>
+  <p>Enter your salary, choose your country, and instantly see exactly how much ends up in your bank account — broken down clearly and simply.</p>
+
+  <h2>Countries Covered</h2>
+  <div class="country-grid">
+    <div class="country-card"><h4>🇬🇧 United Kingdom</h4><p>Income tax, National Insurance, pension contributions, student loan deductions. 2024/25 tax year rates.</p></div>
+    <div class="country-card"><h4>🇺🇸 United States</h4><p>Federal income tax, Social Security (6.2%), and Medicare (1.45%). 2025 tax brackets.</p></div>
+    <div class="country-card"><h4>🇨🇦 Canada</h4><p>Federal income tax, provincial tax estimate, CPP contributions, and EI premiums. 2025 rates.</p></div>
+    <div class="country-card"><h4>🇦🇺 Australia</h4><p>Income tax and Medicare levy. 2024/25 financial year. Low income tax offset included.</p></div>
+  </div>
+
+  <h2>How We Calculate</h2>
+  <p>All calculations use the latest published tax rates and thresholds for each country. For the UK, we apply the 2024/25 income tax bands, National Insurance Class 1 rates, and pension auto-enrolment rules. For the US, we apply the 2025 federal tax brackets plus FICA deductions. Results are estimates — individual circumstances vary.</p>
+
+  <div class="disclaimer">
+    <p><strong style="color:var(--gold-light)">Important disclaimer:</strong> TakeHomeCalc.net provides estimates for informational purposes only. Tax rules are complex and individual circumstances vary. Always consult a qualified tax professional or accountant for advice specific to your situation.</p>
+  </div>
+</div>
+<footer>
+  <p>© 2025 TakeHomeCalc.net — Salary calculator. Estimates only.</p>
+  <div style="display:flex;gap:20px"><a href="privacy.html">Privacy</a><a href="contact.html">Contact</a></div>
+</footer>
+</body>
+</html>
